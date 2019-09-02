@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Snoppify - shorter is better
+{% endblock %}
+
+{% block main %}
+        <div class="form-group">
+            <div class="wrapper">
+<div class="jumbotron jumbotron-fluid" style= "background-color:transparent !important;">
+  <h1 class="display-4">Snoppify</h1>
+  <p class="lead">Shorter is better</p>
+</div>
+    <form action="/" method="post">
+
+            <input autocomplete="off" autofocus class="form-control-lg" name="url_input" placeholder="Paste URL" type="text"> <br> <br>
+            <input value="{{ id }}" autocomplete="off" autofocus class="form-control-lg" name="url_input" placeholder="Short URL" type="text"> <br><br>
+        <div class="wrapper">
+        <button class="btn btn-primary" type="submit">Go!</button>
+    </div>
+    </form>
+
+
+
+
+{% endblock %}

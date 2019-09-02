@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Calculator
+{% endblock %}
+
+{% block main %}
+<script src="/static/calculator.js"></script>
+<div class="container">
+<style>
+button {width: 50px;}
+input {width: 300}
+</style>
+</br>
+<table>
+    <tr>
+        <td colspan="4">
+        <input onclick='ik(this.value);' class="form-control input-lg" type="text" id="display">
+        </td>
+    </tr>
+    <tr>
+    <td> <button id="btn_c" class="btn btn-secondary btn-lg">C</button> </td>
+    <td> <button id="btn_&" class="btn btn-primary btn-lg">&</button> </td>
+    <td> <button id="btn_%" class="btn btn-primary btn-lg">%</button> </td>
+    <td> <button id="btn_/" class="btn btn-primary btn-lg">/</button> </td>
+    </tr>
+    <tr>
+    <td> <button id="btn_btn_7" class="btn btn-primary btn-lg">7</button> </td>
+    <td> <button id="btn_8" class="btn btn-primary btn-lg">8</button> </td>
+    <td> <button id="btn_9" class="btn btn-primary btn-lg">9</button> </td>
+    <td> <button id="btn_x" class="btn btn-primary btn-lg">x</button> </td>
+    </tr>
+        <tr>
+    <td> <button id="btn_4" class="btn btn-primary btn-lg">4</button> </td>
+    <td> <button id="btn_5" class="btn btn-primary btn-lg">5</button> </td>
+    <td> <button id="btn_6" class="btn btn-primary btn-lg">6</button> </td>
+    <td> <button id="btn_-" class="btn btn-primary btn-lg">-</button> </td>
+    </tr>
+        <tr>
+    <td> <button id="btn_1" class="btn btn-primary btn-lg">1</button> </td>
+    <td> <button id="btn_2" class="btn btn-primary btn-lg">2</button> </td>
+    <td> <button id="btn_3" class="btn btn-primary btn-lg">3</button> </td>
+    <td> <button id="btn_+" class="btn btn-primary btn-lg">+</button> </td>
+    </tr>
+        <tr>
+    <td> <button id="btn_0" class="btn btn-primary btn-lg">0</button> </td>
+    <td> <button id="btn_." class="btn btn-primary btn-lg">.</button> </td>
+    <td> <button id="btn_=" class="btn btn-primary btn-lg">=</button> </td>
+    <td> <button id="btn_kuk" class="btn btn-primary btn-lg">kuk</button> </td>
+    </tr>
+
+
+</div>
+{% endblock %}
